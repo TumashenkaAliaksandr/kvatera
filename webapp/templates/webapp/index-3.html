@@ -1,0 +1,1256 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <!-- form main starts -->
+    <div class="form-main">
+        <div class="container">
+            <div class="form-content">
+                    <div class="form-navtab text-center">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Buy</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Rent</button>
+                            </li>
+                        </ul>  
+                    </div>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Search Property</label>
+                                        <div class="input-box">
+                                            <input type="text" placeholder="Search Property" class="ps-3">
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Location</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">Input Location</option>
+                                                <option value="2">Argentina</option>
+                                                <option value="3">Belgium</option>
+                                                <option value="4">Canada</option>
+                                                <option value="5">Denmark</option>
+                                            </select>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Property Type</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">Luxury</option>
+                                                <option value="2">Deluxe</option>
+                                                <option value="3">Premium</option>
+                                            </select>
+                                        </div>                             
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Bedrooms</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>                             
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-0">
+                                        <label>Size(.sq ft)</label>
+                                        <div class="input-box">
+                                            <input type="text" placeholder="Type Size(.sq ft)" class="ps-3">
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group range-slider mb-0">
+                                        <label for="customRange1" class="form-label">Price Range</label>
+                                        <div class="input-box">
+                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                <span class="min-value">500 $</span> 
+                                                <span class="max-value">20000 $</span>
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group mb-0 mt-4">
+                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Search Property</label>
+                                        <div class="input-box">
+                                            <input type="text" placeholder="Search Property" class="ps-3">
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Location</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">Input Location</option>
+                                                <option value="2">Argentina</option>
+                                                <option value="3">Belgium</option>
+                                                <option value="4">Canada</option>
+                                                <option value="5">Denmark</option>
+                                            </select>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Property Type</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">Luxury</option>
+                                                <option value="2">Deluxe</option>
+                                                <option value="3">Premium</option>
+                                            </select>
+                                        </div>                             
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label>Bedrooms</label>
+                                        <div class="input-box">
+                                            <select class="niceSelect ps-3">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>                             
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-group mb-0">
+                                        <label>Size(.sq ft)</label>
+                                        <div class="input-box">
+                                            <input type="text" placeholder="Type Size(.sq ft)" class="ps-3">
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group range-slider mb-0">
+                                        <label for="customRange1" class="form-label">Price Range</label>
+                                        <div class="input-box">
+                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                <span class="min-value">500 $</span> 
+                                                <span class="max-value">20000 $</span>
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group mb-0 mt-4">
+                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- form main ends -->
+
+    <!-- Trending Starts -->
+    <section class="trending">
+        <div class="container">
+            <div class="section-title mb-6 pb-1 w-75 mx-auto text-center">
+                <h2 class="m-0">More Featured <span>Property</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>  
+            <div class="trend-box">
+                <div class="row item-slider">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trend-item box-shadow rounded">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending2.jpg' %}" alt="image">
+                                <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                <div class="trend-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/2.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                </div>
+                            </div>
+                            <div class="trend-content p-4">
+                                <h5 class="theme">Apartment</h5>
+                                <h4><a href="detail-rightside.html">7012 Shine Sehu Street, Liverpool London, LC345AC</a></h4>
+                                <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                    <div class="entry-author">
+                                        <p>Start From<span class="d-block theme fw-bold">$63,000.00</span></p>
+                                        
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i></li>
+                                            <li class="me-2"><i class="fa fa-heart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                
+                            </div>
+                            <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trend-item box-shadow rounded">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending1.jpg' %}" alt="image">
+                                <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                <div class="trend-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                </div>
+                            </div>
+                            <div class="trend-content p-4">
+                                <h5 class="theme">Villa</h5>
+                                <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                    <div class="entry-author">
+                                        <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                        
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i></li>
+                                            <li class="me-2"><i class="fa fa-heart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                
+                            </div>
+                            <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trend-item box-shadow rounded">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending3.jpg' %}" alt="image">
+                                <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                </div>
+                            </div>
+                            <div class="trend-content p-4">
+                                <h5 class="theme">House</h5>
+                                <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                    <div class="entry-author">
+                                        <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                        
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i></li>
+                                            <li class="me-2"><i class="fa fa-heart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                
+                            </div>
+                            <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trend-item box-shadow rounded">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending4.jpg' %}" alt="image">
+                                <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                </div>
+                            </div>
+                            <div class="trend-content p-4">
+                                <h5 class="theme">House</h5>
+                                <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                    <div class="entry-author">
+                                        <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                        
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i></li>
+                                            <li class="me-2"><i class="fa fa-heart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                
+                            </div>
+                            <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-btn text-center"><a href="grid-leftfilter.html" class="nir-btn">View All Listings</a></div>
+            </div>    
+        </div>
+    </section>
+    <!-- Trending Ends -->
+
+    <!-- about-us starts -->
+    <section class="about-us pt-0 pb-5">
+        <div class="container">
+            <div class="about-image-box">
+                <div class="row d-flex align-items-center justify-content-between text-lg-start text-center">
+                    <div class="col-lg-7 col-sm-12 mb-4">
+                        <div class="about-content">
+                            <h4 class="theme d-inline-block">About Us</h4>
+                            <h2 class="border-b mb-2 pb-2">The Leading Real Estate Rental Marketplace.</h2>
+                            <p class="border-b mb-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="about-listing">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="fa fa-building theme"></i> Smart Home Design</li>
+                                    <li><i class="fa fa-building theme"></i> Beautiful Scene Around</li>
+                                    <li><i class="fa fa-building theme"></i> Complete 24/7 Security</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 mb-4">
+                        <div class="about-image p-3 box-shadow position-relative">
+                            <img src="{% static 'webapp/images/destination/destination3.jpg' %}" alt="" class="w-100">
+                            <div class="video-button text-center">
+                                 <div class="call-button text-center">
+                                    <button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">
+                                        <i class="fa fa-play bg-blue"></i>
+                                    </button>
+                                </div>
+                                <div class="video-figure"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- about-us ends -->
+
+    <!-- about-us starts -->
+    <section class="about-us bg-white pb-5 pt-0">
+        <div class="container">
+            
+            <div class="row align-items-center mb-6 text-center text-lg-start">
+                <div class="col-lg-8">
+                    <div class="section-title section-title-l pb-1">
+                        <h2 class="m-0">Why <span>Choose</span> Us?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="grid-leftfilter.html" class="nir-btn float-lg-end float-none">View All Categories</a>
+                </div>
+            </div>
+
+            <!-- why us starts -->
+            <div class="why-us">
+                <div class="why-us-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey">
+                                <div class="why-us-icon">
+                                    <i class="flaticon-call theme"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="services-detail.html">Trusted By Thousands</a></h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey">
+                                <div class="why-us-icon">
+                                    <i class="flaticon-global theme"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="services-detail.html">Wide Renge Properties</a></h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey">
+                                <div class="why-us-icon">
+                                    <i class="flaticon-building theme"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="services-detail.html">Financing Made Easy</a></h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey">
+                                <div class="why-us-icon">
+                                    <i class="flaticon-location-pin theme"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="services-detail.html">We are here near you</a></h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- why us ends -->
+        </div>
+    </section>
+    <!-- about-us ends -->
+
+    <!-- Counter -->
+    <section class="counter-main pb-0 pt-0">
+        <div class="container">
+            <div class="counter text-center bg-lgrey p-5 pb-1 border">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="counter-item d-flex align-items-center text-start border-end px-4">
+                            <i class="fa fa-users theme2 me-4"></i>
+                            <div class="counter-content">
+                                <h3 class="value mb-0">560</h3>
+                                <span class="m-0">Total Area Square</span>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="counter-item d-flex align-items-center text-start border-end px-4">
+                            <i class="fa fa-plane theme2 me-4"></i>
+                            <div class="counter-content">
+                                <h3 class="value mb-0">530</h3>
+                                <span class="m-0">Apartments Sold</span>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="counter-item d-flex align-items-center text-start border-end px-4">
+                            <i class="fa fa-chart-bar theme2 me-4"></i>
+                            <div class="counter-content">
+                                <h3 class="value mb-0">624</h3>
+                                <span class="m-0">Total Constructions</span>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="counter-item d-flex align-items-center text-start px-4">
+                            <i class="fa fa-support theme2 me-4"></i>
+                            <div class="counter-content">
+                                <h3 class="value mb-0">340</h3>
+                                <span class="m-0">Apartio Rooms</span>
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- End Counter -->
+
+    <!-- Trending Starts -->
+    <section class="trending content-line pt-19" style="background-image:url(../../static/webapp/images/bg/bg2.jpg);">
+        <div class="container">
+            <div class="section-title section-title-w mb-6 pb-1 w-75 mx-auto text-center">
+                <h2 class="m-0 white">Our Best <span>Deals</span></h2>
+                <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>  
+            <div class="trend-box">
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <div class="trend-item box-shadow rounded bg-white mb-4">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending2.jpg' %}" alt="image">
+                                <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                <div class="trend-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/2.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                </div>
+                            </div>
+                            <div class="trend-content p-4 pb-2">
+                                <h5 class="theme">Apartment</h5>
+                                <h4><a href="detail-rightside.html">7012 Shine Sehu Street, Liverpool London, LC345AC</a></h4>
+                                <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                    <div class="entry-author">
+                                        <p>Start From<span class="d-block theme fw-bold">$63,000.00</span></p>
+                                        
+                                    </div>
+                                    <div class="entry-metalist d-flex align-items-center">
+                                        <ul>
+                                            <li class="me-2"><i class="fa fa-eye"></i></li>
+                                            <li class="me-2"><i class="fa fa-heart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="d-flex align-items-center justify-content-between">
+                                    <li class="me-2"><a href="#"><i class="fa fa-eye"></i> 3 Beds</a></li>
+                                    <li class="me-2"><a href="#"><i class="fa fa-heart"></i> 2 Baths</a></li>
+                                    <li><a href="#"><i class="fa fa-comments"></i> 600 Sq Ft</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trend-item box-shadow rounded bg-white">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending5.jpg' %}" alt="image">
+                                <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                <div class="trend-meta d-flex align-items-center justify-content-between">
+                                    <div class="entry-author">
+                                        <img src="{% static 'webapp/images/reviewer/2.jpg' %}" alt="" class="rounded-circle me-1">
+                                        <span>Jenny Lofar</span>
+                                    </div>
+                                    <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="trend-item box-shadow rounded bg-white">
+                                    <div class="trend-image">
+                                        <img src="{% static 'webapp/images/trending/trending1.jpg' %}" alt="image">
+                                        <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                        <div class="trend-meta d-flex align-items-center justify-content-between">
+                                            <div class="entry-author">
+                                                <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                                <span>Jenny Lofar</span>
+                                            </div>
+                                            <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-content p-4 pb-2">
+                                        <h5 class="theme">Villa</h5>
+                                        <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                        <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                            <div class="entry-author">
+                                                <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                
+                                            </div>
+                                            <div class="entry-metalist d-flex align-items-center">
+                                                <ul>
+                                                    <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="trend-item box-shadow rounded bg-white">
+                                    <div class="trend-image">
+                                        <img src="{% static 'webapp/images/trending/trending3.jpg' %}" alt="image">
+                                        <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                            <div class="entry-author">
+                                                <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                                <span>Jenny Lofar</span>
+                                            </div>
+                                            <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-content p-4 pb-2">
+                                        <h5 class="theme">House</h5>
+                                        <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                        <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                            <div class="entry-author">
+                                                <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                
+                                            </div>
+                                            <div class="entry-metalist d-flex align-items-center">
+                                                <ul>
+                                                    <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="trend-item box-shadow rounded bg-white">
+                                    <div class="trend-image">
+                                        <img src="{% static 'webapp/images/trending/trending6.jpg' %}" alt="image">
+                                        <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                        <div class="trend-meta d-flex align-items-center justify-content-between">
+                                            <div class="entry-author">
+                                                <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                                <span>Jenny Lofar</span>
+                                            </div>
+                                            <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-content p-4 pb-2">
+                                        <h5 class="theme">Villa</h5>
+                                        <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                        <div class="entry-meta d-flex align-items-center justify-content-between">
+                                            <div class="entry-author">
+                                                <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                
+                                            </div>
+                                            <div class="entry-metalist d-flex align-items-center">
+                                                <ul>
+                                                    <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="trend-item box-shadow rounded bg-white">
+                                    <div class="trend-image">
+                                        <img src="{% static 'webapp/images/trending/trending3.jpg' %}" alt="image">
+                                        <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                            <div class="entry-author">
+                                                <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                                <span>Jenny Lofar</span>
+                                            </div>
+                                            <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-content p-4 pb-2">
+                                        <h5 class="theme">House</h5>
+                                        <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                        <div class="entry-meta d-flex align-items-center justify-content-between">
+                                            <div class="entry-author">
+                                                <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                
+                                            </div>
+                                            <div class="entry-metalist d-flex align-items-center">
+                                                <ul>
+                                                    <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-btn text-center"><a href="grid-leftfilter.html" class="nir-btn">View All Listings</a></div>
+            </div>    
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <!-- Trending Ends -->
+
+    <!-- trending-topic starts -->
+    <section class="category-main pb-6 pt-6">
+        <div class="container">  
+            <div class="category-main-inner">
+                <div class="row side-slider">
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-archive mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Offices & Studios</a></h4>
+                                <span>22 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-industry mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Industrail</a></h4>
+                                <span>18 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-dumpster mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Commercial</a></h4>
+                                <span>36 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-building mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Buildings</a></h4>
+                                <span>58 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-home mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Home & Villas</a></h4>
+                                <span>45 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-4">
+                        <div class="category-item box-shadow p-4 py-6 text-center">
+                            <i class="fa fa-warehouse mb-2"></i>
+                            <div class="trending-topic-content">
+                                <h4 class="mb-1"><a href="grid-leftfilter.html">Garages</a></h4>
+                                <span>31 Properties</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--trending-topic ends -->
+
+    <!-- Discount action starts -->
+    <section class="discount-action pt-0 pb-9">
+        <div class="container">
+            <div class="call-banner" style="background-image: url(../../static/webapp/images/bg/bg1.jpg);">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6 col-md-8 p-0">
+                        <div class="call-banner-inner bg-theme1">
+                            <div class="trend-content-main">
+                                <div class="trend-content p-5">
+                                    <h5 class="mb-1 white">Wanna to Sell Or Rent??</h5>
+                                    <h2 class="mb-4 white">Looking to Buy a New Property or Sell an Existing One?</h2>
+                                    <div class="section-btns d-flex align-items-center">
+                                        <a href="grid-leftfilter.html" class="nir-btn me-4">Rent Properties <i class="fa fa-arrow-right white pl-1"></i></a>
+                                        <a href="grid-rightfilter.html" class="nir-btn">Buy Properties <i class="fa fa-arrow-right white pl-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-lg-6 col-md-4 p-0"></div> 
+                </div> 
+            </div>     
+        </div>    
+    </section>
+    <!-- Discount action Ends -->
+
+    <!-- trending-topic starts -->
+    <section class="Partners pt-0">
+        <div class="container">
+            <div class="section-title mb-6 pb-1 w-75 mx-auto text-center">
+                <h2 class="m-0">Our Best <span>Partners</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>  
+            <div class="partner-wrapper">
+                <ul class="attract-slider">
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-1.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-2.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-3.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-4.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-5.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-3.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-4.png' %}" alt=""></li>
+                    <li class="px-3"><img src="{% static 'webapp/images/cl-5.png' %}" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--trending-topic ends -->
+
+    <!-- our teams starts -->
+    <section class="our-team" style="background-image: url(../../static/webapp/images/shape-1.png);">
+        <div class="container">
+            <div class="section-title mb-6 pb-1 w-75 text-center mx-auto">
+                <h2 class="m-0">Meet Our <span>Excellent Agents</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>   
+            <div class="team-main">
+                <div class="row shop-slider">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="team-list">
+                            <div class="team-image">
+                                <img src="{% static 'webapp/images/team/img1.jpg' %}" alt="team">
+                            </div>
+                            <div class="team-content text-center p-3 bg-white">
+                               <h4 class="mb-0">Salmon Thuir</h4>
+                                <p class="mb-0">Senior Agent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="team-list">
+                            <div class="team-image">
+                                <img src="{% static 'webapp/images/team/img2.jpg' %}" alt="team">
+                            </div>
+                            <div class="team-content text-center p-3 bg-white">
+                               <h4 class="mb-0">Horke Pels</h4>
+                                <p class="mb-0">Head Officer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="team-list">
+                            <div class="team-image">
+                                <img src="{% static 'webapp/images/team/img4.jpg' %}" alt="team">
+                            </div>
+                            <div class="team-content text-center p-3 bg-white">
+                               <h4 class="mb-0">Solden kalos</h4>
+                                <p class="mb-0">Supervisor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="team-list">
+                            <div class="team-image">
+                                <img src="{% static 'webapp/images/team/img3.jpg' %}" alt="team">
+                            </div>
+                            <div class="team-content text-center p-3 bg-white">
+                               <h4 class="mb-0">Nelson Bam</h4>
+                                <p class="mb-0">Quality Assurance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="team-list">
+                            <div class="team-image">
+                                <img src="{% static 'webapp/images/team/img5.jpg' %}" alt="team">
+                            </div>
+                            <div class="team-content text-center bg-white p-3">
+                               <h4 class="mb-0">Cacics Coold</h4>
+                                <p class="mb-0">Asst. Chef</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our teams Ends -->
+
+    <!-- content-line start -->
+    <div class="content-line">
+        <div class="container">
+            <div class="content-line-inner bg-theme2 pb-6 pt-6 p-5">
+                <div class="row d-md-flex align-items-center justify-content-between text-lg-start text-center">
+                    <div class="col-lg-9">
+                        <h2 class="mb-0 white">
+                            Looking for a dream home?
+                        </h2>
+                        <p class="white">We can help you realize your dream of a new home</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="grid-leftfilter.html" class="nir-btn-black float-lg-end float-none">Fine More Properties</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- content-line ends -->
+
+    <!-- testomonial start -->
+    <section class="testimonial pb-6">
+        <div class="container"> 
+            <div class="section-title mb-4 pb-1 w-75 mx-auto text-center">
+                <h2 class="m-0">Good Reviews By <span>Clients</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> 
+            <div class="row review-slider">
+                <div class="col-sm-4 item">
+                    <div class="testimonial-item1 text-center">
+                        <div class="details">
+                            <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="{% static 'webapp/images/testimonial/img1.jpg' %}" alt=""></a>
+                            <div class="author-title">
+                                <h4 class="m-0 theme2">Jared Erondu</h4>
+                                <span>Supervisor</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2"></i>
+                    </div>
+                </div>
+                <div class="col-sm-4 item">
+                    <div class="testimonial-item1 text-center">
+                        <div class="details">
+                            <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem  Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="{% static 'webapp/images/testimonial/img2.jpg' %}" alt=""></a>
+                            <div class="author-title">
+                                <h4 class="m-0 theme2">Cadic Vegeta</h4>
+                                <span>Sr. Consultant</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2"></i>
+                    </div>
+                </div>
+                <div class="col-sm-4 item">
+                    <div class="testimonial-item1 text-center">
+                        <div class="details">
+                            <p class="m-0">Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="{% static 'webapp/images/testimonial/img3.jpg' %}" alt=""></a>
+                            <div class="author-title">
+                                <h4 class="m-0 theme2">Jonathan Beri</h4>
+                                <span>Sales Manager</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial ends --> 
+
+    <!-- recent-articles starts -->
+    <section class="trending recent-articles pb-6 pt-0">
+        <div class="container">
+            <div class="section-title mb-4 pb-1 w-75 mx-auto text-center">
+                <h2 class="m-0">Recent Articles & <span>Posts</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="recent-articles-inner">
+                <div class="row">
+                    <div class="col-lg-4 mb-2">
+                        <div class="trend-item box-shadow bg-white p-4 mb-2">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending10.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main pt-3">
+                                <div class="trend-content">
+                                    <h5 class="theme">Technology</h5>
+                                    <h4><a href="detail-1.html">How a developer and designer duo at Deutsche Bank keep remote alive.</a></h4>
+                                    <p class="mb-3">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                    <div class="entry-meta d-flex align-items-center justify-content-between">
+                                        <div class="entry-author">
+                                            <img src="{% static 'webapp/images/reviewer/2.jpg' %}" alt="" class="rounded-circle me-1">
+                                            <span>Sollmond Nell</span>
+                                        </div>
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <ul>
+                                                <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                                <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                                <li><i class="fa fa-comments"></i> 5k</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-4">
+                                <img src="{% static 'webapp/images/trending/trending2.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="detail-1.html">3 Easy Ways To Make Your iPhone Faster</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 29 Mar 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-3">
+                                <img src="{% static 'webapp/images/trending/trending3.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="detail-1.html">5 Kinds of Food-Shamers You Will Encounter</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 10 Apr 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-2">
+                        <div class="trend-item box-shadow bg-white p-4 mb-2">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending12.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main pt-3">
+                                <div class="trend-content">
+                                    <h5 class="theme">Inspiration</h5>
+                                    <h4><a href="detail-1.html">Inspire Runner with Autism Graces the Latest Cover of Women's Running</a></h4>
+                                    <p class="mb-3">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                    <div class="entry-meta d-flex align-items-center justify-content-between">
+                                        <div class="entry-author">
+                                            <img src="{% static 'webapp/images/reviewer/1.jpg' %}" alt="" class="rounded-circle me-1">
+                                            <span>David Scott</span>
+                                        </div>
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <ul>
+                                                <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                                <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                                <li><i class="fa fa-comments"></i> 5k</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-4">
+                                <img src="{% static 'webapp/images/trending/trending1.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="detail-1.html">3 Easy Ways To Make Your iPhone Faster</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 29 Mar 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-3">
+                                <img src="{% static 'webapp/images/trending/trending2.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="#">5 Kinds of Food-Shamers You Will Encounter</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 10 Apr 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-2">
+                        <div class="trend-item box-shadow bg-white p-4 mb-2">
+                            <div class="trend-image">
+                                <img src="{% static 'webapp/images/trending/trending13.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main pt-3">
+                                <div class="trend-content">
+                                    <h5 class="theme">Public</h5>
+                                    <h4><a href="detail-1.html">We Provide Services To Grow Your Business more Sell Affiliate Products</a></h4>
+                                    <p class="mb-3">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                    <div class="entry-meta d-flex align-items-center justify-content-between">
+                                        <div class="entry-author">
+                                            <img src="{% static 'webapp/images/reviewer/3.jpg' %}" alt="" class="rounded-circle me-1">
+                                            <span>John Bolden</span>
+                                        </div>
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <ul>
+                                                <li class="me-2"><i class="fa fa-eye"></i> 5k</li>
+                                                <li class="me-2"><i class="fa fa-heart"></i> 5k</li>
+                                                <li><i class="fa fa-comments"></i> 5k</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-4">
+                                <img src="{% static 'webapp/images/trending/trending4.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="detail-1.html">3 Easy Ways To Make Your iPhone Faster</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 29 Mar 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-item d-flex align-items-center box-shadow p-3 mb-2 bg-white">
+                            <div class="trend-image w-25 me-3">
+                                <img src="{% static 'webapp/images/trending/trending5.jpg' %}" alt="image">
+                            </div>
+                            <div class="trend-content-main w-75">
+                                <div class="trend-content">
+                                    <h4 class="mb-1"><a href="detail-1.html">5 Kinds of Food-Shamers You Will Encounter</a></h4>
+                                    <div class="entry-meta">
+                                        <div class="entry-metalist d-flex align-items-center">
+                                            <small><a href="#" class="grey"><i class="fa fa-calendar"></i> 10 Apr 2021</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- recent-articles ends -->
+
+    <!-- Instagram starts -->
+    <section class="insta-main pt-0">
+        <div class="container">
+            <div class="insta-inner">
+            <div class="follow-button">
+                <h5 class="m-0"><i class="fab fa-instagram"></i> Follow on Instagram</h5>
+            </div>
+            <div class="row attract-slider">
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-3.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-4.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-5.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-1.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-7.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-8.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-2.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-6.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="{% static 'webapp/images/insta/ins-9.jpg' %}" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+            </div>    
+        </div>
+    </section>
+    <!-- Instagram ends -->
+
+    <section class="newsletter p-0 content-line-b position-relative">
+        <div class="container">
+            <div class="newsletter-main bg-theme2 p-5 pb-3">
+                <div class="row align-items-center text-center text-lg-start">
+                    <div class="col-lg-8 mb-2">
+                        <div class="newsletter-content">
+                            <h2 class="mb-0 white">
+                                Do You Need Help With Anything?
+                            </h2>
+                            <p class="mb-0 white">Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-2">
+                        <div class="newsletter-form w-100">
+                            <form action="#" method="get" accept-charset="utf-8" class="border-0">
+                                <input type="text" placeholder="Email Address" >
+                                <button class="nir-btn-black">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
