@@ -42,27 +42,63 @@
                     <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-3 pt-3">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">
+                            <a class="navbar-brand" href="{% url 'webapp:home' %}">
                                 <img src="{% static 'webapp/images/kvatera_logo.png' %}" alt="image">
                             </a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav" id="responsive-menu">
-                                <li class="dropdown submenu active">
-                                    <a href="{% url 'webapp:home' %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="icon-arrow-down" aria-hidden="true"></i></a>
+                                <li class="submenu dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Услуги <i class="icon-arrow-down"
+                                                                                           aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="index.html">Homepage Default</a></li>
-                                        <li><a href="index-1.html">Homepage 1</a></li>
-                                        <li><a href="index-2.html">Homepage 2</a></li>
-                                        <li><a href="index-3.html">Homepage 3</a></li>
-                                        <li><a href="index-4.html">Homepage 4</a></li>
+                                        <li class="submenu dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                               aria-haspopup="true" aria-expanded="false">Продать<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="agent1.html">Квартиру или Дом</a></li>
+                                                <li><a href="agent.html">Офис или Помещение</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                               aria-haspopup="true" aria-expanded="false">Сдать в аренду<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="agent1.html">Квартиру или Дом</a></li>
+                                                <li><a href="agent.html">Офис или Помещение</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                               aria-haspopup="true" aria-expanded="false">Купить<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="services.html">Квартиру</a></li>
+                                                <li><a href="services-detail.html">Дом</a></li>
+                                                <li><a href="services-detail.html">Офис или Помещение</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu dropdown">
+                                            <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown"
+                                               role="button" aria-haspopup="true" aria-expanded="false">Снять<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="gallery.html">Квартиру</a></li>
+                                                <li><a href="gallery1.html">На Сутки</a></li>
+                                                <li><a href="gallery1.html">Дом</a></li>
+                                                <li><a href="gallery1.html">Офис или Помещение</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
 
-                                <li><a href="{% url 'webapp:about' %}">About Us</a></li>
+                                <li><a href="{% url 'webapp:about' %}">О Нас</a></li>
                                 <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing <i class="icon-arrow-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Объекты <i class="icon-arrow-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="submenu dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing List<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -91,18 +127,17 @@
                                     </ul>
                                 </li>
                                 <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon-arrow-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Собственникам <i class="icon-arrow-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agent<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Бесплатная Оценка<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="agent1.html">Agent Grid</a></li>
                                                 <li><a href="agent.html">Agent List</a></li>
                                                 <li><a href="agent-detail.html">Agent Detail</a></li>
                                             </ul>
                                         </li>
                                         <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agency<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Физ Лица<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="agencies.html">Agency Grid</a></li>
                                                 <li><a href="agencies1.html">Agency List</a></li>
@@ -110,82 +145,22 @@
                                             </ul>
                                         </li>
                                         <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Юр Лица<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="services.html">Services Lists</a></li>
                                                 <li><a href="services-detail.html">Service Detail</a></li>
                                             </ul>
                                         </li>
-                                        <li class="submenu dropdown">
-                                            <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="gallery1.html">Gallery Masonry</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Error<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="404.html">Error Page 1</a></li>
-                                                <li><a href="404-1.html">Error Page 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="register.html">Register</a></li>
-                                        <li><a href="comingsoon.html">Coming Soon</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="dashboard.html">Dashboard</a></li>
-                                                <li><a href="dashboard-my-profile.html">User Profile</a></li>
-                                                <li><a href="dashboard-messages.html">User Messages</a></li>
-                                                <li><a href="dashboard-add-new.html">Add New</a></li>
-                                                <li><a href="dashboard-list.html">Listing</a></li>
-                                                <li><a href="dashboard-list.html">User Wishlist</a></li>
-                                                <li><a href="dashboard-history.html">History</a></li>
-                                                <li><a href="dashboard-reviews.html">Reviews</a></li>
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </li>
-                                <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <i class="icon-arrow-down" aria-hidden="true"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog Grid<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="post-grid-1.html">Blog Grid 1</a></li>
-                                                <li><a href="post-grid-2.html">Blog Grid 2</a></li>
-                                                <li><a href="post-grid-3.html">Blog Grid 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog List<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="post-list-1.html">Blog List 1</a></li>
-                                                <li><a href="post-list-2.html">Blog List 2</a></li>
-                                                <li><a href="post-list-3.html">Blog List 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog Single<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="detail-1.html">Blog Single 1</a></li>
-                                                <li><a href="detail-2.html">Blog Single 2</a></li>
-                                                <li><a href="detail-3.html">Blog Single 3</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
                                 <li class="search-main"><a href="#search1" class="mt_search"><i class="fa fa-search"></i></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                         <div class="register-login d-flex align-items-center">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-2">
-                                <i class="fa fa-user"></i> Login/Register
+                                <i class="fa fa-mobile-phone"></i> +375(33)379-95-12
                             </a>
                             <div class="header_sidemenu me-3">
                                 <div class="mhead">
@@ -194,7 +169,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <a href="#" class="nir-btn white">Add Listing</a>
+                            <a href="#" class="nir-btn white">Связаться с Нами</a>
                         </div>
 
                         <div id="slicknav-mobile"></div>
