@@ -370,7 +370,7 @@ select{
 	option{color:$black}
 }
 
-textarea{border-radius:none; resize: vertical; height: 120px;}
+textarea{border-radius:0; resize: vertical; height: 120px;}
 
 label {
     display: inline-block;
@@ -390,7 +390,7 @@ blockquote {
   padding: 30px 70px 30px 70px;
   line-height:$fontlineheight;
   color:$white;
-  margin: 20 0;
+  margin: 20px 0;
   font-style: $fontitalic;
   position:relative;
   :after{
@@ -598,7 +598,7 @@ iframe{width: 100%; border:none;}
 				}
 			}
 			&:last-child>{
-				a, span{border-radius:none; margin:0;}
+				a, span{border-radius:0; margin:0;}
 			}
 
 		}

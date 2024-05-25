@@ -13,10 +13,16 @@
                     <div class="form-navtab text-center">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Buy</button>
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Купить</button>
+                            </li>
+                             <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Продать</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Rent</button>
+                                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Арендовать</button>
+                            </li>
+                             <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Сдать</button>
                             </li>
                         </ul>  
                     </div>
@@ -26,65 +32,67 @@
                             <div class="row d-flex align-items-center justify-content-between">
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Search Property</label>
+                                        <label>Поиск недвижимости</label>
                                         <div class="input-box">
-                                            <input type="text" placeholder="Search Property" class="ps-3">
+                                            <input type="text" placeholder="Поиск недвижимости" class="ps-3">
                                         </div>                            
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Location</label>
+                                        <label>Выбрать Где</label>
                                         <div class="input-box">
                                             <select class="niceSelect ps-3">
-                                                <option value="1">Input Location</option>
-                                                <option value="2">Argentina</option>
-                                                <option value="3">Belgium</option>
-                                                <option value="4">Canada</option>
-                                                <option value="5">Denmark</option>
+                                                <option value="1">г.Пололцк</option>
+                                                <option value="2">г.Новополоцк</option>
+                                                <option value="3">гп.Баравуха-1</option>
+                                                <option value="4">гп.Баравуха-2,3</option>
+                                                <option value="5">Районы</option>
                                             </select>
                                         </div>                            
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Property Type</label>
+                                        <label>Наличие Ремонта</label>
                                         <div class="input-box">
                                             <select class="niceSelect ps-3">
-                                                <option value="1">Luxury</option>
-                                                <option value="2">Deluxe</option>
-                                                <option value="3">Premium</option>
+                                                <option value="1">Требует ремонта</option>
+                                                <option value="2">Косметический</option>
+                                                <option value="3">Евро</option>
+                                                <option value="4">Не важно</option>
                                             </select>
                                         </div>                             
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Bedrooms</label>
+                                        <label>Сколько Комнат</label>
                                         <div class="input-box">
                                             <select class="niceSelect ps-3">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
-                                                <option value="3">3</option>
+                                                <option value="3">4</option>
+                                                <option value="3">5</option>
                                             </select>
                                         </div>                             
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-0">
-                                        <label>Size(.sq ft)</label>
+                                        <label>Площадь(кв/м)</label>
                                         <div class="input-box">
-                                            <input type="text" placeholder="Type Size(.sq ft)" class="ps-3">
+                                            <input type="text" placeholder="Площадь(кв/м)" class="ps-3">
                                         </div>                            
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group range-slider mb-0">
-                                        <label for="customRange1" class="form-label">Price Range</label>
+                                        <label for="customRange1" class="form-label">цена</label>
                                         <div class="input-box">
-                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                                                <span class="min-value">500 $</span> 
-                                                <span class="max-value">20000 $</span>
+                                            <div data-min="0" data-max="20000" data-unit="Br" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                <span class="min-value">2000 Br</span>
+                                                <span class="max-value">200000 Br</span>
                                                 <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
                                             </div>
                                         </div>                            
@@ -92,7 +100,7 @@
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="form-group mb-0 mt-4">
-                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search Now</a>
+                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Найти</a>
                                     </div>
                                 </div>
                             </div>
@@ -102,73 +110,31 @@
                             <div class="row d-flex align-items-center justify-content-between">
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Search Property</label>
+                                        <label>Номер телефона</label>
                                         <div class="input-box">
-                                            <input type="text" placeholder="Search Property" class="ps-3">
+                                            <input type="text" placeholder="Ваш номер телефона" class="ps-3">
                                         </div>                            
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Location</label>
+                                        <label>Ваше Имя</label>
                                         <div class="input-box">
-                                            <select class="niceSelect ps-3">
-                                                <option value="1">Input Location</option>
-                                                <option value="2">Argentina</option>
-                                                <option value="3">Belgium</option>
-                                                <option value="4">Canada</option>
-                                                <option value="5">Denmark</option>
-                                            </select>
-                                        </div>                            
+                                            <input type="text" placeholder="Ваше Имя" class="ps-3">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="form-group mb-2">
-                                        <label>Property Type</label>
+                                        <label>Адрес</label>
                                         <div class="input-box">
-                                            <select class="niceSelect ps-3">
-                                                <option value="1">Luxury</option>
-                                                <option value="2">Deluxe</option>
-                                                <option value="3">Premium</option>
-                                            </select>
-                                        </div>                             
+                                            <input type="text" placeholder="Ваш Адрес" class="ps-3">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="form-group mb-2">
-                                        <label>Bedrooms</label>
-                                        <div class="input-box">
-                                            <select class="niceSelect ps-3">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </div>                             
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group mb-0">
-                                        <label>Size(.sq ft)</label>
-                                        <div class="input-box">
-                                            <input type="text" placeholder="Type Size(.sq ft)" class="ps-3">
-                                        </div>                            
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group range-slider mb-0">
-                                        <label for="customRange1" class="form-label">Price Range</label>
-                                        <div class="input-box">
-                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                                                <span class="min-value">500 $</span> 
-                                                <span class="max-value">20000 $</span>
-                                                <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
-                                            </div>
-                                        </div>                            
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-group mb-0 mt-4">
-                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search Now</a>
+                                    <div class="form-group mb-0 mt-4-two">
+                                        <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Написать нам</a>
                                     </div>
                                 </div>
                             </div>
@@ -183,8 +149,8 @@
     <section class="trending">
         <div class="container">
             <div class="section-title mb-6 pb-1 w-75 mx-auto text-center">
-                <h2 class="m-0">More Featured <span>Property</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="m-0">Популярные<span> Предложения</span></h2>
+                <p>ТОП 10 предложений по недвижимости от нашей компании Кватэра214.</p>
             </div>  
             <div class="trend-box">
                 <div class="row item-slider">
@@ -339,7 +305,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="trend-btn text-center"><a href="grid-leftfilter.html" class="nir-btn">View All Listings</a></div>
+                <div class="trend-btn text-center"><a href="grid-leftfilter.html" class="nir-btn">Посмотреть все предложения</a></div>
             </div>    
         </div>
     </section>
@@ -352,8 +318,8 @@
                 <div class="row d-flex align-items-center justify-content-between text-lg-start text-center">
                     <div class="col-lg-7 col-sm-12 mb-4">
                         <div class="about-content">
-                            <h4 class="theme d-inline-block">About Us</h4>
-                            <h2 class="border-b mb-2 pb-2">The Leading Real Estate Rental Marketplace.</h2>
+                            <h4 class="theme d-inline-block">О Нас</h4>
+                            <h2 class="border-b mb-2 pb-2">Наша Компания 10 лет на рынке недвижимости.</h2>
                             <p class="border-b mb-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="about-listing">
                                 <ul class="d-flex justify-content-between">
@@ -391,12 +357,12 @@
             <div class="row align-items-center mb-6 text-center text-lg-start">
                 <div class="col-lg-8">
                     <div class="section-title section-title-l pb-1">
-                        <h2 class="m-0">Why <span>Choose</span> Us?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 class="m-0">Почему <span>нужно выбирать</span> именно Нас?</h2>
+                        <p>Наша Компания 10 лет на рынке недвижимости.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <a href="grid-leftfilter.html" class="nir-btn float-lg-end float-none">View All Categories</a>
+                    <a href="grid-leftfilter.html" class="nir-btn float-lg-end float-none">Оставить заявку</a>
                 </div>
             </div>
 

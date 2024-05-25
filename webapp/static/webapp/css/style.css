@@ -46,7 +46,7 @@ h6 a {
   transition:all ease-in-out .5s;
   cursor:pointer;
   text-decoration:none;
-  background:linear-gradient(to right,#f2b241,#f2b241);
+  background:linear-gradient(to right,#f9a70a,#f9a70a);
   background-position:left 87%;
   background-repeat:no-repeat;
   background-size:0 2px;
@@ -160,7 +160,7 @@ input::placeholder {
   color:#777!important
 }
 .row [class*=col-] {
-  padding:0 15px
+  padding:0 10px
 }
 img {
   max-width:100%
@@ -193,10 +193,10 @@ img {
   color:#fff!important
 }
 .theme {
-  color:#2db838!important
+  color:#82c106!important
 }
 .theme2 {
-  color:#f2b241!important
+  color:#f9a70a!important
 }
 .black {
   color:#04590a!important
@@ -214,13 +214,13 @@ img {
   background:#2db838!important
 }
 .bg-theme2 {
-  background:#f2b241!important
+  background:#f9a70a!important
 }
 .bg-theme1 {
   background:#0a1c1f!important
 }
 .bg-ltheme {
-  background:#f2b241!important
+  background:#f9a70a!important
 }
 .bg-black {
   background:#3f3f3f!important
@@ -241,7 +241,7 @@ img {
   border:1px solid #f1f1f1!important
 }
 .rating span {
-  color:#ffbc00;
+  color:#f9a70a;
   display:inline;
   font-size:14px
 }
@@ -264,6 +264,12 @@ small {
 .mt-4,
 .my-4 {
   margin-top:2rem!important
+}
+
+.mt-4-two,
+.my-4-two {
+  margin-top: 2rem !important;
+  margin-bottom: 1.15rem !important;
 }
 .mt-5,
 .my-5 {
@@ -485,7 +491,7 @@ select option {
   color:#3f3f3f
 }
 textarea {
-  border-radius:none;
+  border-radius:0;
   resize:vertical;
   height:120px
 }
@@ -505,7 +511,7 @@ blockquote {
   padding:30px 70px;
   line-height:1.5;
   color:#fff;
-  margin:20 0;
+  margin:20px 0;
   font-style:italic;
   position:relative
 }
@@ -620,7 +626,7 @@ section {
 .section-title-w h2,
 .section-title-l h2 {
   position:relative;
-  color:#2db838;
+  color:#82c106;
   line-height:1.2;
   margin-bottom:1rem!important
 }
@@ -634,7 +640,7 @@ section {
   border-color:#fff!important
 }
 .section-title-w h2 span {
-  color:#f2b241
+  color:#f9a70a;
 }
 .section-title-l:before {
   left:0;
@@ -712,7 +718,7 @@ iframe {
 }
 .pagination-main .pagination li:last-child>a,
 .pagination-main .pagination li:last-child>span {
-  border-radius:none;
+  border-radius:0;
   margin:0
 }
 .pagination-main .pagination li.active a {
@@ -3059,7 +3065,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   z-index:2
 }
 .form-main .form-content h3.form-title {
-  background:#f2b241;
+  background:#f9a70a;
   padding:10px 20px;
   position:relative;
   top:-40px;
@@ -3112,7 +3118,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   transition:all .5s
 }
 .form-main .form-content .form-navtab .nav-tabs li:hover button {
-  background:#f2b241;
+  background:#f9a70a;
   color:#fff;
   border:none;
   transition:all .5s
@@ -3122,7 +3128,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   transition:all .5s
 }
 .form-main .form-content .form-navtab .nav-tabs li button.active {
-  background:#f2b241;
+  background:#f9a70a;
   color:#fff;
   border:none;
   transition:all .5s
@@ -3154,7 +3160,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   border-width:0 0 1px
 }
 .form-main .form-content.form-content2 .input-box i {
-  color:#f2b241;
+  color:#f9a70a;
   font-weight:600;
   left:0
 }
@@ -3180,7 +3186,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   color:#fff!important
 }
 .form-main .form-content.form-content3 .input-box i {
-  color:#f2b241;
+  color:#f9a70a;
   font-weight:600;
   left:0
 }
@@ -3255,10 +3261,10 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
 }
 .category-main .category-main-inner .category-item i {
   font-size:50px;
-  color:#f2b241
+  color:#f9a70a;
 }
 .category-main .category-main-inner .category-item:hover {
-  background:#2db838;
+  background:#85c10d;
   transition:all ease-in-out .5s
 }
 .category-main .category-main-inner .category-item:hover i,
@@ -3850,7 +3856,7 @@ ul.social-with-text li a i {
   line-height:2.5;
   text-align:center;
   color:#fff;
-  background:#2db838;
+  background:#82c106;
   transition:all ease-in-out .5s;
   padding:0 0 0 5px;
   border-radius:50%;
