@@ -3308,10 +3308,12 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
 }
 .why-us .why-us-item .why-us-icon [class^=flaticon-]::before,
 .why-us .why-us-item .why-us-icon i {
-  font-size:58px
+  font-size:58px;
+  color: #83c006;
+  margin-bottom: 7px;
 }
 .why-us .why-us-item:hover {
-  background:#2db838!important;
+  background:#83c006!important;
   transform:translateY(-5px);
   transition:all ease-in-out .5s;
   cursor:pointer
