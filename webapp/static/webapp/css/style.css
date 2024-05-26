@@ -1008,7 +1008,7 @@ input#submit:hover {
   display:block;
   width:40px;
   height:40px;
-  background:#2db838;
+  background:#82c106;
   position:relative;
   transition:all ease-in-out .5s;
   text-align:center
@@ -2048,7 +2048,7 @@ header #navbar {
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li a {
   background:0 0;
-  font-size:15px;
+  font-size:14px;
   font-weight:400;
   text-transform:uppercase;
   line-height:inherit;
@@ -4697,7 +4697,7 @@ section.call-to-action.maincounter .counter {
 }
 .testimonial .testimonial-item1 i {
   font-size:40px;
-  color:#2db838;
+  color:#82c106;
   position:absolute;
   right:-20px;
   top:-20px;
