@@ -134,7 +134,7 @@ ol li {
   position:relative
 }
 a {
-  color:#777;
+  color: rgba(42, 42, 42);
   transition:all ease-in-out .5s;
   cursor:pointer;
   text-decoration:none
@@ -345,7 +345,7 @@ small {
 }
 .pt-3,
 .py-3 {
-  padding-top:1.5rem!important
+  padding-top:1.3rem!important
 }
 .pt-4,
 .py-4 {
@@ -397,7 +397,7 @@ small {
 }
 .pb-3,
 .py-3 {
-  padding-bottom:1.5rem!important
+  padding-bottom:1.3rem!important
 }
 .pb-4,
 .py-4 {
@@ -866,19 +866,19 @@ button {
   z-index:1;
   font-size:14px;
   text-align:center;
-  padding:14px 24px;
+  padding:10px 15px;
   text-transform:capitalize;
   transition:all ease-in-out .5s;
   background:#81c103;
   color:#fff;
   display:inline-block;
-  border-radius:0;
+  border-radius:1px;
   border:none;
   box-shadow:0 0 0 4px rgba(255,255,255,.1)
 }
 .nir-btn:hover,
 .nir-btn-black:hover {
-  background:#04590a;
+  background:#f9a70a;
   transition:all ease-in-out .5s;
   color:#fff
 }
@@ -1855,6 +1855,15 @@ header #navbar {
 .navbar-nav li>ul>li ul>li:last-child>a {
   border-bottom:0
 }
+
+/*logo style img*/
+.img-fixed-size-logo {
+    width: 180px; /* Установите желаемую ширину */
+    height: 230px; /* Установите желаемую высоту */
+    object-fit: cover; /* Этот свойство сохраняет соотношение сторон и обрезает изображение по нужным размерам */
+}
+/*end logo style img*/
+
 .main_header_area {
   position:relative;
   width:100%
@@ -1904,7 +1913,7 @@ header #navbar {
   animation-name:slideInUp
 }
 .main_header_area .register-login a {
-  font-size:15px;
+  font-size:14px;
   text-transform:uppercase;
   color:#777
 }
@@ -2031,22 +2040,21 @@ header #navbar {
 .header_menu .navbar.navbar-default .nav.navbar-nav li {
   float:none;
   display:inline-block;
-  margin-right:0;
+  margin-right:3px;
   background:0 0
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li:last-child {
-  margin:0
+  /*margin:0;*/
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li a {
   background:0 0;
   font-size:15px;
   font-weight:400;
   text-transform:uppercase;
-  padding:0;
   line-height:inherit;
   transition:all 150ms linear;
   border:none;
-  padding:0 5px
+  padding:0 7px;
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li a i {
   font-size:12px
