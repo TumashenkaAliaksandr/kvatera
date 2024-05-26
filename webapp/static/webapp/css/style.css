@@ -866,7 +866,7 @@ button {
   z-index:1;
   font-size:14px;
   text-align:center;
-  padding:10px 15px;
+  padding:13px 15px;
   text-transform:capitalize;
   transition:all ease-in-out .5s;
   background:#81c103;
@@ -2054,10 +2054,10 @@ header #navbar {
   line-height:inherit;
   transition:all 150ms linear;
   border:none;
-  padding:0 7px;
+  padding:0 6px;
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li a i {
-  font-size:12px
+  font-size:13px
 }
 .header_menu .navbar.navbar-default .nav.navbar-nav li a i.fa-angle-right {
   position:absolute;
