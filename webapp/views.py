@@ -5,6 +5,12 @@ def index(request):
 
     return render(request, 'webapp/index-3.html')
 
+
 def about(request):
 
     return render(request, 'webapp/about.html')
+
+
+def contacts(request):
+
+    return render(request, 'webapp/contact.html')
