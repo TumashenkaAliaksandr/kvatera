@@ -1,211 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Realshield - Real Estate Full HTML Template</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'webapp/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!--Custom CSS-->
-    <link href="{% static 'webapp/css/style.css" rel="stylesheet" type="text/css">
-    <!--Plugin CSS-->
-    <link href="{% static 'webapp/css/plugin.css" rel="stylesheet" type="text/css">
-    <!--Flaticons CSS-->
-    <link href="{% static 'webapp/fonts/flaticon.css" rel="stylesheet" type="text/css">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-    <link rel="stylesheet" href="{% static 'webapp/fonts/line-icons.css" type="text/css">
-</head>
-<body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status"></div>
-    </div>
-    <!-- Preloader Ends -->
-
-    <!-- header starts -->
-    <header class="main_header_area">
-        <!-- Navigation Bar -->
-        <div class="header_menu" id="header_menu">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-3 pt-3">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="{% static 'webapp/images/logo.png" alt="image">
-                            </a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav" id="responsive-menu">
-                                <li class="dropdown submenu">
-                                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="icon-arrow-down" aria-hidden="true"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Homepage Default</a></li>
-                                        <li><a href="index-1.html">Homepage 1</a></li>
-                                        <li><a href="index-2.html">Homepage 2</a></li>
-                                        <li><a href="index-3.html">Homepage 3</a></li>
-                                        <li><a href="index-4.html">Homepage 4</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="about.html">About Us</a></li>
-                                <li class="submenu dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing <i class="icon-arrow-down" aria-hidden="true"></i></a> 
-                                    <ul class="dropdown-menu">
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing List<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="listing-leftfilter.html">Listing Left Filter</a></li>
-                                                <li><a href="listing-rightfilter.html">Listing Right Filter</a></li>
-                                                <li><a href="listing-fullwidth.html">Listing Fullwidth</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing Grid<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="grid-leftfilter.html">Grid Left Filter</a></li>
-                                                <li><a href="grid-rightfilter.html">Grid Right Filter</a></li>
-                                                <li><a href="grid-fullwidth.html">Grid Fullwidth</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing Single<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="detail-leftside.html">Single Leftside</a></li>
-                                                <li><a href="detail-rightside.html">Single Rightside</a></li>
-                                                <li><a href="detail-fullwidth.html">Single Fullwidth</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon-arrow-down" aria-hidden="true"></i></a> 
-                                    <ul class="dropdown-menu">
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agent<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="agent1.html">Agent Grid</a></li>
-                                                <li><a href="agent.html">Agent List</a></li>
-                                                <li><a href="agent-detail.html">Agent Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agency<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="agencies.html">Agency Grid</a></li>
-                                                <li><a href="agencies1.html">Agency List</a></li>
-                                                <li><a href="agency-detail.html">Agency Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="services.html">Services Lists</a></li>
-                                                <li><a href="services-detail.html">Service Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="gallery1.html">Gallery Masonry</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Error<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="404.html">Error Page 1</a></li>
-                                                <li><a href="404-1.html">Error Page 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="register.html">Register</a></li>
-                                        <li><a href="comingsoon.html">Coming Soon</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="dashboard.html">Dashboard</a></li>
-                                                <li><a href="dashboard-my-profile.html">User Profile</a></li>
-                                                <li><a href="dashboard-messages.html">User Messages</a></li>
-                                                <li><a href="dashboard-add-new.html">Add New</a></li>
-                                                <li><a href="dashboard-list.html">Listing</a></li>
-                                                <li><a href="dashboard-list.html">User Wishlist</a></li>
-                                                <li><a href="dashboard-history.html">History</a></li>
-                                                <li><a href="dashboard-reviews.html">Reviews</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <i class="icon-arrow-down" aria-hidden="true"></i></a> 
-                                    <ul class="dropdown-menu">
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog Grid<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="post-grid-1.html">Blog Grid 1</a></li>
-                                                <li><a href="post-grid-2.html">Blog Grid 2</a></li>
-                                                <li><a href="post-grid-3.html">Blog Grid 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog List<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="post-list-1.html">Blog List 1</a></li>
-                                                <li><a href="post-list-2.html">Blog List 2</a></li>
-                                                <li><a href="post-list-3.html">Blog List 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog Single<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="detail-1.html">Blog Single 1</a></li>
-                                                <li><a href="detail-2.html">Blog Single 2</a></li>
-                                                <li><a href="detail-3.html">Blog Single 3</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li class="search-main"><a href="#search1" class="mt_search"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->   
-                        <div class="register-login d-flex align-items-center">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-2">
-                                <i class="fa fa-user"></i> Login/Register
-                            </a>
-                            <div class="header_sidemenu me-3">
-                                <div class="mhead">
-                                    <span class="menu-ham">
-                                        <a href="#" class="cart-icon d-flex align-items-center ms-1"><i class="fa fa-th-large fs-5 black bg-grey p-2"></i></a>
-                                    </span>
-                                </div>
-                            </div>
-                            <a href="#" class="nir-btn white">Add Listing</a>
-                        </div> 
-
-                        <div id="slicknav-mobile"></div>
-                    </div>
-                </div><!-- /.container-fluid --> 
-            </nav>
-        </div>
-        <!-- Navigation Bar Ends -->
-    </header>
-    <!-- header ends -->
 
     <!-- BreadCrumb Starts -->  
-    <section class="breadcrumb-main pb-0 pt-20" style="background-image: url(images/bg/bg2.jpg);">
+    <section class="breadcrumb-main pb-0 pt-20" style="background-image: url(../../../webapp/static/webapp/images/bg/bg2.jpg);">
         <div class="breadcrumb-outer">
             <div class="container">
                 <div class="breadcrumb-content d-md-flex align-items-center pt-6">
@@ -304,7 +99,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending1.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending1.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -338,7 +133,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending5.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -371,7 +166,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending5.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -404,7 +199,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending7.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending7.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -436,7 +231,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending5.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -468,7 +263,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending8.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending8.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -500,7 +295,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-4">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending6.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending6.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-7 col-md-8">
@@ -548,7 +343,7 @@
     <!-- Discount action starts -->
     <section class="discount-action p-0">
         <div class="container">
-            <div class="call-banner" style="background-image: url(images/bg/bg1.jpg);">
+            <div class="call-banner" style="background-image: url(../../../webapp/static/webapp/images/bg/bg1.jpg);">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6 col-md-8 p-0">
                         <div class="call-banner-inner bg-theme1">
@@ -569,14 +364,14 @@
             </div> 
             <div class="partner-wrapper bg-grey p-4">
                 <ul class="attract-slider">
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-1.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-2.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-3.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-4.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-5.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-3.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-4.png" alt=""></a></li>
-                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-5.png" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-1.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-2.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-3.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-4.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-5.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-3.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-4.png' %}" alt=""></a></li>
+                    <li class="px-3"><a href="#"><img src="{% static 'webapp/images/cl-5.png' %}" alt=""></a></li>
                 </ul>
             </div>    
         </div>    
@@ -593,47 +388,47 @@
             <div class="row attract-slider">
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-3.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-3.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-4.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-4.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-5.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-5.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-1.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-1.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-7.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-7.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-8.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-8.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-2.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-2.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-6.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-6.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="insta-image">
-                        <a href="#"><img src="{% static 'webapp/images/insta/ins-9.jpg" alt="insta"></a>
+                        <a href="#"><img src="{% static 'webapp/images/insta/ins-9.jpg' %}" alt="insta"></a>
                     </div>
                 </div>
             </div>
@@ -661,129 +456,6 @@
         </div>   
     </div>
     <!-- content-line ends -->
-
-    <!-- footer starts -->
-    <footer class="pt-10 footermain">
-        <div class="footer-upper pb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="footer-about">
-                            <img src="{% static 'webapp/images/logo-white.png" alt="">
-                            <p class="mt-3 mb-3 white">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
-                            </p>
-                            <ul>
-                                <li class="white"><strong>PO Box:</strong> +47-252-254-2542</li>
-                                <li class="white"><strong>Location:</strong> Collins Street, sydney, Australia</li>
-                                <li class="white"><strong>Email:</strong> info@realshield.com</li>
-                                <li class="white"><strong>Website:</strong> www.realshield.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <div class="footer-links">
-                            <h3 class="white">Quick link</h3>
-                            <ul>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Return Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <div class="footer-links">
-                            <h3 class="white">Popular Tags</h3>
-                            <div class="tagcloud">
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Beautiful</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Public</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Technology</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Travel</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Entertainment</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Blog</a>
-                                <a class="tag-cloud-link bg-white black p-2 mb-1" href="#">Sports </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="footer-links">
-                            <h3 class="white">Popular Posts</h3>
-                            <div class="trend-main">
-                                <div class="trend-item d-flex align-items-center mb-2">
-                                    <div class="trend-image w-25 me-4">
-                                        <img src="{% static 'webapp/images/trending/trending4.jpg" alt="image">
-                                    </div>
-                                    <div class="trend-content-main w-75">
-                                        <div class="trend-content">
-                                            <h5 class="mb-1"><a href="#">3 Easy Ways To Make Your iPhone Faster</a></h5>
-                                            <div class="entry-meta">
-                                                <div class="entry-metalist d-flex align-items-center">
-                                                    <small><a href="#" class="white"><i class="fa fa-calendar"></i> 29 Mar 2021</a></small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="trend-item d-flex align-items-center mb-2">
-                                    <div class="trend-image w-25 me-4">
-                                        <img src="{% static 'webapp/images/trending/trending5.jpg" alt="image">
-                                    </div>
-                                    <div class="trend-content-main w-75">
-                                        <div class="trend-content">
-                                            <h5 class="mb-1"><a href="#">Facts About Business That Will Help You Success</a></h5>
-                                            <div class="entry-meta">
-                                                <div class="entry-metalist d-flex align-items-center">
-                                                    <small><a href="#" class="white"><i class="fa fa-calendar"></i> 05 Apr 2021</a></small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="trend-item d-flex align-items-center mb-2">
-                                    <div class="trend-image w-25 me-4">
-                                        <img src="{% static 'webapp/images/trending/trending6.jpg" alt="image">
-                                    </div>
-                                    <div class="trend-content-main w-75">
-                                        <div class="trend-content">
-                                            <h5 class="mb-1"><a href="#">Your Light Is About To Stop Being Relevant</a></h5>
-                                            <div class="entry-meta">
-                                                <div class="entry-metalist d-flex align-items-center">
-                                                    <small><a href="#" class="white"><i class="fa fa-calendar"></i> 22 Mar 2021</a></small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright pt-2 pb-2">
-            <div class="container">
-                <div class="copyright-inner d-md-flex align-items-center justify-content-between">
-                    <div class="copyright-text">
-                        <p class="m-0 white">2022 Realshield. All rights reserved.</p>
-                    </div>
-                    <div class="social-links">
-                        <ul>  
-                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </footer>
-    <!-- footer ends -->
     
     <!-- Back to top start -->
     <div id="back-to-top">
@@ -822,7 +494,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending5.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-6">
@@ -861,7 +533,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                <div class="blog-image">
-                                    <a href="#" style="background-image: url(images/trending/trending5.jpg);"></a>
+                                    <a href="#" style="background-image: url(../../../webapp/static/webapp/images/trending/trending5.jpg);"></a>
                                 </div> 
                             </div>
                             <div class="col-lg-6">
@@ -917,7 +589,7 @@
                  <div class="m-contentmain">
                     <div class="m-contentmain">
                         <div class="m-logo mb-5">
-                            <img src="{% static 'webapp/images/logo.png" alt="m-logo">
+                            <img src="{% static 'webapp/images/logo.png' %}" alt="m-logo">
                         </div>
 
                         <div class="content-box mb-5">
@@ -941,12 +613,3 @@
             <div class="overlay hide"></div>
         </div>
     </div>
-
-    <!-- *Scripts* -->
-    <script src="{% static 'webapp/js/jquery-3.5.1.min.js"></script>
-    <script src="{% static 'webapp/js/bootstrap.min.js"></script>
-    <script src="{% static 'webapp/js/plugin.js"></script>
-    <script src="{% static 'webapp/js/main.js"></script>
-    <script src="{% static 'webapp/js/custom-nav.js"></script>
-</body>
-</html>
