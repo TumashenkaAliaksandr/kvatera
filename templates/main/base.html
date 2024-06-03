@@ -43,7 +43,7 @@
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <a class="navbar-brand img-fixed-size-logo" href="{% url 'webapp:home' %}">
-                                <img src="{% static 'webapp/images/kvatera_logo.png' %}" alt="image">
+                                <img src="{% static 'webapp/images/kvatera_logo.jpg' %}" alt="image">
                             </a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,7 +78,7 @@
 
                                 <li><a href="{% url 'webapp:about' %}">О Нас</a></li>
                                 <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Объекты <i class="icon-arrow-down" aria-hidden="true"></i></a>
+                                    <a href="{% url 'webapp:objects-rent' %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Объекты <i class="icon-arrow-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="submenu dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продажа<i class="fa fa-angle-right" aria-hidden="true"></i></a>

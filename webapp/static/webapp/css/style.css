@@ -357,8 +357,10 @@ small {
 }
 .pt-6,
 .py-6 {
-  padding-top:3rem!important
+  padding-top:3rem!important;
+  padding-bottom: 1rem;
 }
+
 .pt-7,
 .py-7 {
   padding-top:3.5rem!important
@@ -618,7 +620,7 @@ section {
   bottom:0;
   left:0;
   right:0;
-  border-bottom:2px dashed #2db838;
+  border-bottom:2px dashed #82c106;
   width:10%;
   margin:0 auto
 }
@@ -781,7 +783,7 @@ iframe {
   position:absolute;
   bottom:50%;
   left:0;
-  margin-bottom:10px;
+  margin-bottom:15px;
   right:0
 }
 .breadcrumb-main .breadcrumb-outer .bread-content nav {

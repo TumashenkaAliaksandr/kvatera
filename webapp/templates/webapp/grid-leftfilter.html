@@ -1,0 +1,708 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <!-- BreadCrumb Starts -->  
+    <section class="breadcrumb-main pb-0 pt-20" style="background-image: url(../../../webapp/static/webapp/images/bg/bg2.jpg);">
+        <div class="breadcrumb-outer">
+            <div class="container">
+                <div class="breadcrumb-content d-md-flex align-items-center pt-6">
+                    <h1 class="mb-0">Grid With Left Filter</h1>
+                    <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Grid With Left Filter</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="dot-overlay"></div>
+    </section>
+    <!-- BreadCrumb Ends --> 
+
+    <!-- blog starts -->
+    <section class="blog trending">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="listing-inner">
+                        <div class="list-results d-flex align-items-center justify-content-between">
+                            <div class="list-results-sort">
+                                <p class="m-0">Showing 1-5 of 80 results</p>
+                            </div>
+                            <div class="click-menu d-flex align-items-center justify-content-between">
+                                <div class="change-list me-2"><a href="listing-leftfilter.html"><i class="fa fa-bars"></i></a></div>
+                                <div class="change-grid f-active me-2"><a href="grid-leftfilter.html"><i class="fa fa-th"></i></a></div>
+                                <div class="sortby d-flex align-items-center justify-content-between ml-2">
+                                    <select class="niceSelect">
+                                        <option value="1" >Sort By</option>
+                                        <option value="2">Average rating</option>
+                                        <option value="3">Price: low to high</option>
+                                        <option value="4">Price: high to low</option>
+                                    </select> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-box">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending2.jpg" alt="image">
+                                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                            <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/2.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">Apartment</h5>
+                                            <h4><a href="detail-rightside.html">7012 Shine Sehu Street, Liverpool, LC345AC</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$63,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending1.jpg" alt="image">
+                                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                            <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">Villa</h5>
+                                            <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending3.jpg" alt="image">
+                                            <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">House</h5>
+                                            <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending4.jpg" alt="image">
+                                            <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">House</h5>
+                                            <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending1.jpg" alt="image">
+                                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                            <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">Villa</h5>
+                                            <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending3.jpg" alt="image">
+                                            <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">House</h5>
+                                            <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending4.jpg" alt="image">
+                                            <div class="trend-meta d-flex align-items-center justify-content-between box-shadow rounded">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">House</h5>
+                                            <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="trend-item box-shadow rounded">
+                                        <div class="trend-image">
+                                            <img src="images/trending/trending1.jpg" alt="image">
+                                            <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                            <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                <div class="entry-author">
+                                                    <img src="images/reviewer/1.jpg" alt="" class="rounded-circle me-1">
+                                                    <span>Jenny Lofar</span>
+                                                </div>
+                                                <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Sold</a>
+                                            </div>
+                                        </div>
+                                        <div class="trend-content p-4">
+                                            <h5 class="theme">Villa</h5>
+                                            <h4><a href="detail-rightside.html">425 Vine 012 Street, Montreal Canada, UHW45Q</a></h4>
+                                            <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                <div class="entry-author">
+                                                    <p>Start From<span class="d-block theme fw-bold">$20,000.00</span></p>
+                                                    
+                                                </div>
+                                                <div class="entry-metalist d-flex align-items-center">
+                                                    <ul>
+                                                        <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                        <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            
+                                        </div>
+                                        <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                            <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                            <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                            <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-main text-center">
+                                <ul class="pagination">
+                                    <li><a href="#"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sidebar starts -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="sidebar-sticky">
+                        <div class="list-sidebar">
+                            <div class="sidebar-item mb-4 box-shadow p-4 text-centerb">
+                                <h3>Find your home</h3>
+                                <form class="form-find">
+                                    <div class="form-group mb-2">
+                                        <input type="text" placeholder="Enter Keywords">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="input-box">
+                                            <select class="niceSelect">
+                                                <option value="1">Locations</option>
+                                                <option value="2">Boston</option>
+                                                <option value="3">03</option>
+                                                <option value="4">Chicago</option>
+                                                <option value="5">Denver</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="input-box">
+                                            <select class="niceSelect">
+                                                <option value="1">All Types</option>
+                                                <option value="2">Apartment</option>
+                                                <option value="3">Villa</option>
+                                                <option value="4">Flat</option>
+                                                <option value="5">Rooms</option>
+                                                <option value="5">House</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="input-box">
+                                            <select class="niceSelect">
+                                                <option value="1">All Status</option>
+                                                <option value="2">For Rent</option>
+                                                <option value="3">For Sale</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                    <div class="form-group mb-2 d-flex justify-content-between">
+                                        <div class="input-box w-50 me-1">
+                                            <select class="niceSelect">
+                                                <option value="1">Bedrooms</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div> 
+                                        <div class="input-box w-50 ms-1">
+                                            <select class="niceSelect">
+                                                <option value="1">Bathrooms</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>  
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="range-slider mt-0">
+                                            <p class="text-start mb-2">Price Range</p>
+                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                <span class="min-value">500 $</span> 
+                                                <span class="max-value">20000 $</span>
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="range-slider mt-0">
+                                            <p class="text-start mb-2">Area Size</p>
+                                            <div data-min="0" data-max="2000" data-unit="$" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                <span class="min-value">100 sqft</span> 
+                                                <span class="max-value">20000 sqft</span>
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all full" style="left: 0%; width: 100%;"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center w-100">
+                                        <input type="submit" class="nir-btn w-100" id="submit3" value="Search">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="sidebar-item trending">
+                                <h3 class="">Related Property</h3>
+                                <div class="trend-box">
+                                    <div class="about-slider">
+                                        <div>
+                                            <div class="trend-item box-shadow">
+                                                <div class="trend-image">
+                                                    <img src="images/trending/trending2.jpg" alt="image">
+                                                    <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                                    <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                        <div class="entry-author">
+                                                            <img src="images/reviewer/2.jpg" alt="" class="rounded-circle me-1">
+                                                            <span>Jenny Lofar</span>
+                                                        </div>
+                                                        <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                                    </div>
+                                                </div>
+                                                <div class="trend-content p-4">
+                                                    <h5 class="theme">Apartment</h5>
+                                                    <h4><a href="detail-rightside.html">7012 Shine Sehu Street, Liverpool London, LC345AC</a></h4>
+                                                    <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                        <div class="entry-author">
+                                                            <p>Start From<span class="d-block theme fw-bold">$63,000.00</span></p>
+                                                            
+                                                        </div>
+                                                        <div class="entry-metalist d-flex align-items-center">
+                                                            <ul>
+                                                                <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                                <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                                </div>
+                                                <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                                    <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                                    <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="trend-item box-shadow">
+                                                <div class="trend-image">
+                                                    <img src="images/trending/trending2.jpg" alt="image">
+                                                    <a href="#" class="flash bg-theme1 white px-3 py-2"><i class="fa fa-flash"></i></a>
+                                                    <div class="trend-meta d-flex align-items-center justify-content-between">
+                                                        <div class="entry-author">
+                                                            <img src="images/reviewer/2.jpg" alt="" class="rounded-circle me-1">
+                                                            <span>Jenny Lofar</span>
+                                                        </div>
+                                                        <a href="grid-leftfilter.html" class="tags bg-theme2 white px-3 py-1">For Rent</a>
+                                                    </div>
+                                                </div>
+                                                <div class="trend-content p-4">
+                                                    <h5 class="theme">Villa</h5>
+                                                    <h4><a href="detail-rightside.html">1244 Vansh Market, Mise Mizkel Australia, AU456HA</a></h4>
+                                                    <div class="entry-meta d-flex align-items-center justify-content-between border-b pb-1 mb-2">
+                                                        <div class="entry-author">
+                                                            <p>Start From<span class="d-block theme fw-bold">$52,000.00</span></p>
+                                                            
+                                                        </div>
+                                                        <div class="entry-metalist d-flex align-items-center">
+                                                            <ul>
+                                                                <li class="me-2"><i class="fa fa-eye"></i></li>
+                                                                <li class="me-2"><i class="fa fa-heart"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                                </div>
+                                                <ul class="d-flex align-items-center justify-content-between bg-grey p-3 px-4">
+                                                    <li class="me-2"><i class="fa fa-eye"></i> 3 Beds</li>
+                                                    <li class="me-2"><i class="fa fa-heart"></i> 2 Baths</li>
+                                                    <li><i class="fa fa-comments"></i> 600 Sq Ft</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-item top-post">
+                                <h3>Popular Destination</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+                                        <div class="trend-item">
+                                            <div class="trend-image">
+                                                <img src="images/destination/destination13.jpg" alt="image">
+                                                <div class="trend-content pt-2">
+                                                    <h6 class="mb-0"><a href="listing-leftfilter.html">Los Angeles</a></h6>
+                                                    <span>28 Properties</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+                                        <div class="trend-item">
+                                            <div class="trend-image">
+                                                <img src="images/destination/destination14.jpg" alt="image">
+                                                <div class="trend-content pt-2">
+                                                    <h6 class="mb-0"><a href="listing-leftfilter.html">New York</a></h6>
+                                                    <span>45 Properties</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+                                        <div class="trend-item">
+                                            <div class="trend-image">
+                                                <img src="images/destination/destination15.jpg" alt="image">
+                                                <div class="trend-content pt-2">
+                                                    <h6 class="mb-0"><a href="listing-leftfilter.html">Florida</a></h6>
+                                                    <span>32 Properties</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="trend-item">
+                                            <div class="trend-image">
+                                                <img src="images/destination/destination16.jpg" alt="image">
+                                                <div class="trend-content pt-2">
+                                                    <h6 class="mb-0"><a href="listing-leftfilter.html">Texas</a></h6>
+                                                    <span>51 Properties</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog Ends -->  
+
+    <!-- Discount action starts -->
+    <section class="discount-action pt-0">
+        <div class="container">
+            <div class="call-banner" style="background-image: url(../../../webapp/static/webapp/images/bg/bg1.jpg);">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6 col-md-8 p-0">
+                        <div class="call-banner-inner bg-theme1">
+                            <div class="trend-content-main">
+                                <div class="trend-content p-5">
+                                    <h5 class="mb-1 white">Wanna to Sell Or Rent??</h5>
+                                    <h2 class="mb-4 white">Looking to Buy a New Property or Sell an Existing One?</h2>
+                                    <div class="section-btns d-flex align-items-center">
+                                        <a href="grid-leftfilter.html" class="nir-btn me-4">Rent Properties <i class="fa fa-arrow-right white pl-1"></i></a>
+                                        <a href="grid-rightfilter.html" class="nir-btn">Buy Properties <i class="fa fa-arrow-right white pl-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-lg-6 col-md-4 p-0"></div> 
+                </div> 
+            </div> 
+            <div class="partner-wrapper bg-grey p-4">
+                <ul class="attract-slider">
+                    <li class="px-3"><img src="images/cl-1.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-2.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-3.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-4.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-5.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-3.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-4.png" alt=""></li>
+                    <li class="px-3"><img src="images/cl-5.png" alt=""></li>
+                </ul>
+            </div>    
+        </div>    
+    </section>
+    <!-- Discount action Ends -->
+
+    <!-- Instagram starts -->
+    <section class="insta-main pt-0">
+        <div class="container">
+            <div class="insta-inner">
+            <div class="follow-button">
+                <h5 class="m-0"><i class="fab fa-instagram"></i> Follow on Instagram</h5>
+            </div>
+            <div class="row attract-slider">
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-3.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-4.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-5.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-1.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-7.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-8.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-2.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-6.jpg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="insta-image">
+                        <a href="gallery.html"><img src="images/insta/ins-9.jpg" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+            </div>    
+        </div>
+    </section>
+    <!-- Instagram ends -->
+
+    <!-- content-line start -->
+    <div class="content-line m-0">
+        <div class="content-line-inner bg-theme2 pb-6 pt-6 p-5">
+            <div class="container">
+                <div class="row d-md-flex align-items-center justify-content-between text-lg-start text-center">
+                <div class="col-lg-9">
+                    <h2 class="mb-0 white">
+                        Looking for a dream home?
+                    </h2>
+                    <p class="white">We can help you realize your dream of a new home</p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="listing-leftfilter.html" class="nir-btn-black float-lg-end float-none">Fine More Properties</a>
+                </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- content-line ends -->
+
+{% endblock %}
