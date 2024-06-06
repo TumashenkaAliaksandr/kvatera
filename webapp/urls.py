@@ -8,9 +8,9 @@ app_name = 'webapp'
 urlpatterns = [
     path('', index, name='home'),
     path('about/', about, name='about'),
-    path('contatcts/', contacts, name='contacts'),
+    path('contacts/', contacts, name='contacts'),
     path('objects-rent/', objects_rent, name='objects-rent'),
-    path('detail-full-witch/', detail_full, name='detail-full-witch'),
+    path('detail-full-width/', detail_full, name='detail-full-width'),
     ]
 
 if settings.DEBUG:
