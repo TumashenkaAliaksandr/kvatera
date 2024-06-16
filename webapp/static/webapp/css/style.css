@@ -31,7 +31,7 @@ h5,
 h6 {
   font-weight:600;
   font-family:rubik,sans-serif;
-  text-transform:capitalize;
+  text-transform:uppercase;
   margin:0 0 16px;
   color:#0a1c1f;
   line-height:1.4
@@ -868,8 +868,8 @@ button {
   z-index:1;
   font-size:14px;
   text-align:center;
-  padding:13px 15px;
-  text-transform:capitalize;
+  padding:15px 15px;
+  text-transform:uppercase;
   transition:all ease-in-out .5s;
   background:#81c103;
   color:#fff;
