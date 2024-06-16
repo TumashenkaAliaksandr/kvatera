@@ -1857,7 +1857,18 @@ header #navbar {
 .navbar-nav li>ul>li ul>li:last-child>a {
   border-bottom:0
 }
+.header-ph a {
+	text-decoration: none;
+	color: #333; /* Change the color to your preference */
+}
 
+.header-ph a:hover {
+	color: #81c103; /* Green color on hover */
+}
+
+.header-ph a{
+	margin-right: 20px; /* Adjust the margin to your preference */
+}
 /*logo style img*/
 .img-fixed-size-logo {
     width: 180px; /* Установите желаемую ширину */
