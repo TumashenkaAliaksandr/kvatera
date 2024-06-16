@@ -345,7 +345,7 @@ small {
 }
 .pt-3,
 .py-3 {
-  padding-top:1.3rem!important
+  padding-top:0.2rem!important
 }
 .pt-4,
 .py-4 {
@@ -399,7 +399,7 @@ small {
 }
 .pb-3,
 .py-3 {
-  padding-bottom:1.3rem!important
+  padding-bottom:0.3rem!important
 }
 .pb-4,
 .py-4 {
@@ -612,6 +612,15 @@ section {
   position:relative;
   z-index:1
 }
+
+.section-title-two h2{
+  font-size: 37px;
+  /*position: relative;*/
+  /*color: #82c106;*/
+  /*line-height: 1.2;*/
+  /*margin-bottom: 1rem !important;*/
+}
+
 .section-title:before,
 .section-title-w:before,
 .section-title-l:before {
@@ -621,7 +630,7 @@ section {
   left:0;
   right:0;
   border-bottom:2px dashed #82c106;
-  width:10%;
+  width:15%;
   margin:0 auto
 }
 .section-title h2,
@@ -1880,6 +1889,12 @@ header #navbar {
     height: 20%; /* Установите желаемую высоту */
     object-fit: cover; /* Этот свойство сохраняет соотношение сторон и обрезает изображение по нужным размерам */
 }
+
+.img-fixed-size-favicon {
+    width: 10%; /* Установите желаемую ширину */
+    height: 10%; /* Установите желаемую высоту */
+    object-fit: cover; /* Этот свойство сохраняет соотношение сторон и обрезает изображение по нужным размерам */
+}
 /*end logo style img*/
 
 .main_header_area {
@@ -2186,7 +2201,7 @@ header #navbar {
   left:0;
   width:100%;
   height:100%;
-  background-color:#fff;
+  background-color: #f7fff5;
   z-index:9999;
   -webkit-transition:all .5s ease-in-out;
   -moz-transition:all .5s ease-in-out;
@@ -2222,7 +2237,7 @@ header #navbar {
 }
 #search1 .btn {
   position:absolute;
-  top:50%;
+  top: 55%;
   left:0;
   right:0;
   margin:0 auto;
@@ -6714,4 +6729,13 @@ ul.sidebar-tags li a:hover {
   .home-search .main-slider-1 .main-slider-inner .form-content .search-tabs li i {
     float:none
   }
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #333; /* Change the color to your preference */
+}
+
+.contact-link:hover {
+  color: #008000; /* Green color on hover */
 }
